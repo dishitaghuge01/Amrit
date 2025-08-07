@@ -1,18 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 
 const Gallery = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [waveformHeights, setWaveformHeights] = useState<number[]>([]);
   const [showAllPhotos, setShowAllPhotos] = useState(false);
-
-  useEffect(() => {
-    // Generate random heights for waveform visualization on client side
-    const heights = Array.from({ length: 20 }, () => Math.random() * 20 + 8);
-    setWaveformHeights(heights);
-  }, []);
 
   const galleryItems = [
     {

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MemoryLane from './components/MemoryLane';
@@ -10,8 +10,6 @@ import AudioRoom from './components/AudioRoom';
 import HiddenRoom from './components/HiddenRoom';
 
 export default function Home() {
-  const [hiddenRoomVisible, setHiddenRoomVisible] = useState(false);
-
   return (
     <main className="min-h-screen bg-[#0d0d2b] text-white">
       <Navbar />
@@ -37,10 +35,7 @@ export default function Home() {
       </section>
 
       <section id="hidden-room" className="min-h-screen py-20">
-        <HiddenRoom 
-          isVisible={hiddenRoomVisible}
-          onToggle={() => setHiddenRoomVisible(!hiddenRoomVisible)}
-        />
+        <HiddenRoom />
       </section>
     </main>
   );

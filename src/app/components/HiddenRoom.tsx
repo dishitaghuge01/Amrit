@@ -2,12 +2,7 @@
 
 import { useState } from 'react';
 
-interface HiddenRoomProps {
-  isVisible: boolean;
-  onToggle: () => void;
-}
-
-const HiddenRoom = ({ isVisible, onToggle }: HiddenRoomProps) => {
+const HiddenRoom = () => {
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [showSecret, setShowSecret] = useState(false);
   const [password, setPassword] = useState('');
@@ -59,7 +54,7 @@ const HiddenRoom = ({ isVisible, onToggle }: HiddenRoomProps) => {
                   A Secret Awaits
                 </h3>
                 <p className="text-gray-300 mb-8 max-w-md mx-auto">
-                  There's something special hidden here, just for you. Are you ready to discover it?
+                  There&apos;s something special hidden here, just for you. Are you ready to discover it?
                 </p>
 
                 {!showPasswordInput ? (
@@ -149,9 +144,9 @@ const HiddenRoom = ({ isVisible, onToggle }: HiddenRoomProps) => {
                           The moment you are back to heal my soul.<br></br>
                         </p>
                         <p>
-                          I'd write in sand and write upon the rain,<br></br>
-                          I'd write on the walls to ease my loving pain,<br></br>
-                          I'd write on the clouds that drift across the sky,<br></br>
+                          I&apos;d write in sand and write upon the rain,<br></br>
+                          I&apos;d write on the walls to ease my loving pain,<br></br>
+                          I&apos;d write on the clouds that drift across the sky,<br></br>
                           Just trying to explain the reason why.<br></br>
                         </p>
                         <p>
@@ -165,13 +160,13 @@ const HiddenRoom = ({ isVisible, onToggle }: HiddenRoomProps) => {
                           Feels like a eternity.<br></br>
                         </p>
                         <p>
-                          So instead, I'll spend my lifetime<br></br>
+                          So instead, I&apos;ll spend my lifetime<br></br>
                           Learning the poetry of your breathing,<br></br>
                           Memorizing the rhythm of your heartbeat<br></br>
                           Against my chest at 3AM.<br></br>
                           And when I am old and my voice shakes<br></br>
                           When my hands can barely hold a pen<br></br>
-                          I'll still be writing poems,<br></br>
+                          I&apos;ll still be writing poems,<br></br>
                           In the way I look at you.<br></br>
                           Still finding new words for forever<br></br>
                           In the simple act of choosing you<br></br>

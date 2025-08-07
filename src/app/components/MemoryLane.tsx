@@ -75,7 +75,7 @@ const MemoryLane = () => {
         {/* Timeline line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 to-purple-500 h-full" />
 
-        {memories.map((memory, index) => (
+        {memories.map((memory) => (
           <div key={memory.id} className={`relative mb-16 ${memory.position === 'left' ? 'left-timeline' : 'right-timeline'}`}>
             <div className={`flex items-center ${memory.position === 'left' ? 'flex-row' : 'flex-row-reverse'}`}>
               {/* Timeline dot */}

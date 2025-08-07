@@ -48,7 +48,7 @@ const LetterRoom = () => {
               </p>
 
               <p>
-                I know you're not a fighter, but you're the best fighter in the whole world. If I would have been there I would have with hugs and covered your face with kisses. But lets keep them for the next time.
+                I know you&apos;re not a fighter, but you&apos;re the best fighter in the whole world. If I would have been there I would have with hugs and covered your face with kisses. But lets keep them for the next time.
               </p>
 
               <p>

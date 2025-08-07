@@ -157,7 +157,9 @@ const AudioRoom = () => {
 
               {/* Hidden audio element */}
               <audio
-                ref={(el) => audioRefs.current[clip.id] = el}
+                ref={(el) => {
+                  audioRefs.current[clip.id] = el;
+                }}
                 src={clip.audio}
                 onTimeUpdate={() => handleTimeUpdate(clip.id)}
                 onEnded={() => setPlayingId(null)}
